@@ -1,12 +1,14 @@
 package br.ufrpe.bsi.bianca.crudjava.pessoa.gui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 import br.ufrpe.bsi.bianca.crudjava.R;
+import br.ufrpe.bsi.bianca.crudjava.pessoa.dominio.Pessoa;
+import br.ufrpe.bsi.bianca.crudjava.pessoa.negocio.PessoaNegocio;
 
 public class CadastroPessoa extends AppCompatActivity {
     private EditText nomeRegistro;
@@ -81,10 +83,22 @@ public class CadastroPessoa extends AppCompatActivity {
     }
     private void validarCadastro() {
         if (validarCampos()) {
-            criarConta();
+            criarPessoa();
         }
     }
-    private void criarConta(){
 
+    private void criarPessoa(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome(nomeRegistro.getText().toString().trim());
+        pessoa.setCpf(cpfRegistro.getText().toString().trim());
+        pessoa.setTelefone(telefoneRegistro.getText().toString().trim());
+        new PessoaNegocio().inserirPessoa(pessoa);
+        onBackPressed();
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(CadastroPessoa.this, TelaInicial.class));
+        this.finish();
     }
 }

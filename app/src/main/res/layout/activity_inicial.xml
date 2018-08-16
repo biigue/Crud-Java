@@ -7,9 +7,11 @@
     tools:context=".pessoa.gui.TelaInicial">
 
     <Button
+        android:id="@+id/btCadastrarPessoa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cadastrar"/>
+
     <ListView
         android:id="@+id/reformaListaId"
         android:layout_width="0dp"

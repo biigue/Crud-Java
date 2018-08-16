@@ -23,12 +23,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../ArtemisFES/app/src/main/java/br/ufrpe/artemis/infra/ArtemisApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ArtemisFES/app/src/main/java/br/ufrpe/artemis/infra/Sessao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../ArtemisFES/app/src/main/res/layout/activity_login.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../ArtemisFES/app/src/main/res/layout/activity_servicos_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../ArtemisFES/app/src/main/res/layout/linha.xml">
           <value>
             <set />
           </value>
@@ -58,7 +73,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/endereco/gui/CadastroEndereco.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/endereco/gui/EditarEndereco.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/endereco/gui/EnderecoAdapter.java">
           <value>
             <set />
           </value>
@@ -68,7 +93,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/endereco/negocio/EnderecoNegocio.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/infra/CrudApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/infra/MyApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/infra/Sessao.java">
           <value>
             <set />
           </value>
@@ -98,12 +138,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/pessoa/gui/PessoaAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/pessoa/gui/PessoaOpcoes.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/pessoa/gui/TelaInicial.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/pessoa/gui/listaPessoas.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/br/ufrpe/bsi/bianca/crudjava/pessoa/negocio/PessoaNegocio.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/list_selector.xml">
           <value>
             <set />
           </value>
@@ -128,7 +188,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_endereco.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_pessoa.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_inicial.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_linhasss.xml">
           <value>
             <set />
           </value>
@@ -143,7 +218,102 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_pessoa_opcoes.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/linha_endereco.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/linha_pessoa.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/linha_pessoas.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../CrudRoom/feature/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/dao/AgendaDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/dominio/Agenda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/gui/AgendasActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/gui/ContatosActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/gui/ContatosAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/gui/CriarAgendaActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/gui/CriarContatoActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/gui/EditarAgendaActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/agenda/negocio/AgendaNegocio.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/database/AppDatabase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/infra/MyApp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/java/thiago/bsi/ufrpe/br/agendatelefonica/infra/Sessao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/AgendaTelefonica-master/app/src/main/res/layout/activity_editar_agenda.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Android-Room-CRUD-Sample-master/app/src/main/java/husaynhakeem/io/androidroom_crud/entity/Cat.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Android-Room-CRUD-Sample-master/app/src/main/java/husaynhakeem/io/androidroom_crud/utilities/Logger.java">
           <value>
             <set />
           </value>

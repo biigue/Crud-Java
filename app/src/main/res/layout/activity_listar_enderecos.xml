@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".endereco.gui.ListarEnderecos">
+
     <Button
+        android:id="@+id/btCadastrarEndId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cadastrar"/>
+        android:text="Cadastrar Endereço" />
     <ListView
         android:id="@+id/reformaListaId"
         android:layout_width="0dp"

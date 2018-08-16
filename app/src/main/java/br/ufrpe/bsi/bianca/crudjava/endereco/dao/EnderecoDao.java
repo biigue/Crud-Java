@@ -17,15 +17,15 @@ public interface EnderecoDao {
     @Query("SELECT * FROM Endereco")
     public List<Endereco> getAllEnderecos();
 
-    @Query("SELECT * FROM Endereco WHERE id = :id") //mudar para id
-    public List<Endereco> getEnderecosByNome(String id);
+    @Query("SELECT * FROM Endereco WHERE hooman_id = :id")
+    public List<Endereco> getEnderecosById(int id);
 
     @Insert(onConflict = REPLACE)
-    public void insert(Pessoa pessoa);
+    public void insertEndereco(Endereco endereco);
 
     @Update
-    public void update(Pessoa pessoa);
+    public void updateEndereco(Endereco endereco);
 
     @Delete
-    public void delete(Pessoa pessoa);
+    public void deleteEndereco(Endereco endereco);
 }

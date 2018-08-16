@@ -19,7 +19,8 @@
         <activity android:name=".pessoa.gui.TelaInicial" />
         <activity android:name=".endereco.gui.ListarEnderecos" />
         <activity android:name=".endereco.gui.CadastroEndereco" />
-        <activity android:name=".endereco.gui.EditarEndereco"></activity>
+        <activity android:name=".endereco.gui.EditarEndereco" />
+        <activity android:name=".pessoa.gui.PessoaOpcoes" />
     </application>
 
 </manifest>

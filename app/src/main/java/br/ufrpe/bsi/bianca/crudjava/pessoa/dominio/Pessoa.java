@@ -1,5 +1,6 @@
 package br.ufrpe.bsi.bianca.crudjava.pessoa.dominio;
 
+import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Embedded;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
@@ -13,23 +14,13 @@ import br.ufrpe.bsi.bianca.crudjava.endereco.dominio.Endereco;
 public class Pessoa {
     @PrimaryKey(autoGenerate = true)
     public int id;
-
+//    @ColumnInfo(name = "nome")
     public String nome;
 
     public String cpf;
 
     public String telefone;
 
-    @Embedded
-    private Endereco endereco;
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
 
     public int getId() {
         return id;

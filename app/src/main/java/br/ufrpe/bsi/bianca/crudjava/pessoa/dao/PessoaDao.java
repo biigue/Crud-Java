@@ -21,12 +21,12 @@ public interface PessoaDao {
     public List<Pessoa> getPessoasByNome(String nome);
 
     @Insert(onConflict = REPLACE)
-    public void insert(Pessoa pessoa);
+    public void insertPessoa(Pessoa pessoa);
 
     @Update
-    public void update(Pessoa pessoa);
+    public void updatePessoa(Pessoa pessoa);
 
     @Delete
-    public void delete(Pessoa pessoa);
+    public void deletePessoa(Pessoa pessoa);
 
 }

@@ -1,20 +1,27 @@
 package br.ufrpe.bsi.bianca.crudjava.endereco.dominio;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.ForeignKey;
+import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 import android.arch.persistence.room.Entity;
 
-@Entity
+import br.ufrpe.bsi.bianca.crudjava.pessoa.dominio.Pessoa;
+
+@Entity(foreignKeys = @ForeignKey(entity = Pessoa.class,
+        parentColumns = "id",
+        childColumns = "hooman_id"),
+        indices = {@Index("hooman_id")})
 public class Endereco {
     @PrimaryKey(autoGenerate = true)
     public int id;
-
     public String rua;
-
-    public int numero;
-
+    public String numero;
     public String cep;
-
     public String cidade;
+
+    @ColumnInfo(name = "hooman_id")
+    public int hoomanId;
 
     public int getId() {
         return id;
@@ -32,11 +39,11 @@ public class Endereco {
         this.rua = rua;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
