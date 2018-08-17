@@ -8,18 +8,18 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import java.util.List;
 import br.ufrpe.bsi.bianca.crudjava.R;
-import br.ufrpe.bsi.bianca.crudjava.infra.CrudApp;
+import br.ufrpe.bsi.bianca.crudjava.infra.MyApplication;
 import br.ufrpe.bsi.bianca.crudjava.pessoa.dominio.Pessoa;
 
 public class PessoaAdapter extends ArrayAdapter<Pessoa> {
     private List<Pessoa> elementos;
     public PessoaAdapter(@NonNull List<Pessoa> elementos) {
-        super(CrudApp.getContext(), R.layout.linha_pessoas, elementos);
+        super(MyApplication.getContext(), R.layout.linha_pessoas, elementos);
         this.elementos = elementos;
     }
     @Override
     public View getView(int position, View convertView,  ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) CrudApp.getContext()
+        LayoutInflater inflater = (LayoutInflater) MyApplication.getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.linha_pessoas, parent, false);
         TextView nomePessoa = rowView.findViewById(R.id.pessoaId);

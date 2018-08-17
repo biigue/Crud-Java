@@ -15,6 +15,8 @@ import br.ufrpe.bsi.bianca.crudjava.endereco.dominio.Endereco;
 import br.ufrpe.bsi.bianca.crudjava.endereco.negocio.EnderecoNegocio;
 import br.ufrpe.bsi.bianca.crudjava.infra.Sessao;
 import br.ufrpe.bsi.bianca.crudjava.pessoa.dominio.Pessoa;
+import br.ufrpe.bsi.bianca.crudjava.pessoa.gui.PessoaOpcoes;
+import br.ufrpe.bsi.bianca.crudjava.pessoa.gui.TelaInicial;
 
 public class ListarEnderecos extends AppCompatActivity {
     private Button cadastraEndereco;
@@ -53,6 +55,12 @@ public class ListarEnderecos extends AppCompatActivity {
     public void posiEnd(int position){
         Sessao.instance.setEndereco(enderecoLista.get(position));
         startActivity(new Intent(ListarEnderecos.this, EditarEndereco.class));
+        finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(ListarEnderecos.this, PessoaOpcoes.class));
         finish();
     }
 }

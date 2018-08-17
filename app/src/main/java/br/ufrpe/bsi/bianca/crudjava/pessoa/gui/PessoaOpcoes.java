@@ -24,9 +24,9 @@ public class PessoaOpcoes extends AppCompatActivity {
     }
 
     private void setTela(){
-        verEnderecos.findViewById(R.id.btEnderecosId);
-        editarPessoa.findViewById(R.id.btAlterarId);
-        deletarPessoa.findViewById(R.id.btDeletarId);
+        verEnderecos = findViewById(R.id.btEnderecosId);
+        editarPessoa = findViewById(R.id.btEditEndrecoId);
+        deletarPessoa = findViewById(R.id.btDeletarId);
         verEnderecos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +59,11 @@ public class PessoaOpcoes extends AppCompatActivity {
 
     private void deletePessoa(){
         new PessoaNegocio().detelarPessoa(Sessao.instance.getPessoa());
+        onBackPressed();
+    }
+
+    @Override
+    public void onBackPressed() {
         Sessao.instance.resetPessoa();
         startActivity(new Intent(PessoaOpcoes.this, TelaInicial.class));
         finish();

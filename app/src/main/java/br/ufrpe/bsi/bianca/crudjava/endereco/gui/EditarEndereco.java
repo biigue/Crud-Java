@@ -72,12 +72,11 @@ public class EditarEndereco extends AppCompatActivity {
 
     private void deleteEndereco(){
         new EnderecoNegocio().deletarEndereco(Sessao.instance.getEndereco());
-        Sessao.instance.resetPessoa();
-        startActivity(new Intent(EditarEndereco.this, ListarEnderecos.class));
-        finish();
+        onBackPressed();
     }
     @Override
     public void onBackPressed() {
+        Sessao.instance.resetEndereco();
         startActivity(new Intent(EditarEndereco.this, ListarEnderecos.class));
         finish();
     }

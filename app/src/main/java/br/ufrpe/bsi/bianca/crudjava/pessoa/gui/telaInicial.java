@@ -11,7 +11,6 @@ import android.widget.ListView;
 import java.util.List;
 
 import br.ufrpe.bsi.bianca.crudjava.R;
-import br.ufrpe.bsi.bianca.crudjava.endereco.gui.ListarEnderecos;
 import br.ufrpe.bsi.bianca.crudjava.infra.Sessao;
 import br.ufrpe.bsi.bianca.crudjava.pessoa.dominio.Pessoa;
 import br.ufrpe.bsi.bianca.crudjava.pessoa.negocio.PessoaNegocio;
@@ -53,7 +52,7 @@ public class TelaInicial extends AppCompatActivity {
 
     public void posiPessoa(int position){
         Sessao.instance.setPessoa(pessoasLista.get(position));
-        startActivity(new Intent(TelaInicial.this, ListarEnderecos.class));
+        startActivity(new Intent(TelaInicial.this, PessoaOpcoes.class));
         finish();
     }
 }

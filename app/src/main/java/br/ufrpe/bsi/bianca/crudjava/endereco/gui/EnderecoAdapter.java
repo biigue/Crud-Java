@@ -9,18 +9,18 @@ import android.widget.TextView;
 import java.util.List;
 import br.ufrpe.bsi.bianca.crudjava.R;
 import br.ufrpe.bsi.bianca.crudjava.endereco.dominio.Endereco;
-import br.ufrpe.bsi.bianca.crudjava.infra.CrudApp;
+import br.ufrpe.bsi.bianca.crudjava.infra.MyApplication;
 
 
 public class EnderecoAdapter extends ArrayAdapter<Endereco> {
     private List<Endereco> elementos;
     public EnderecoAdapter(@NonNull List<Endereco> elementos) {
-        super(CrudApp.getContext(), R.layout.linha_endereco, elementos);
+        super(MyApplication.getContext(), R.layout.linha_endereco, elementos);
         this.elementos = elementos;
     }
     @Override
     public View getView(int position, View convertView,  ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) CrudApp.getContext()
+        LayoutInflater inflater = (LayoutInflater) MyApplication.getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.linha_endereco, parent, false);
         TextView rua = rowView.findViewById(R.id.ruaId);

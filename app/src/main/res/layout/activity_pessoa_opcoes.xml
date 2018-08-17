@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="250dp" />
 
     <Button
-        android:id="@+id/btEditarId"
+        android:id="@+id/btEditEndrecoId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Editar Pessoa"

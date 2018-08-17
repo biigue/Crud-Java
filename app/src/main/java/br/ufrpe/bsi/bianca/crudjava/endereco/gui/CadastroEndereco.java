@@ -10,6 +10,7 @@ import android.widget.EditText;
 import br.ufrpe.bsi.bianca.crudjava.R;
 import br.ufrpe.bsi.bianca.crudjava.endereco.dominio.Endereco;
 import br.ufrpe.bsi.bianca.crudjava.endereco.negocio.EnderecoNegocio;
+import br.ufrpe.bsi.bianca.crudjava.infra.Sessao;
 import br.ufrpe.bsi.bianca.crudjava.pessoa.gui.CadastroPessoa;
 
 public class CadastroEndereco extends AppCompatActivity {
@@ -45,6 +46,7 @@ public class CadastroEndereco extends AppCompatActivity {
         endereco.setNumero(numeroEnd.getText().toString().trim());
         endereco.setCep(cepEnd.getText().toString().trim());
         endereco.setCidade(cidadeEnd.getText().toString().trim());
+        endereco.setHoomanId(Sessao.instance.getPessoa().id);
         new EnderecoNegocio().inserirEndereco(endereco);
         onBackPressed();
     }

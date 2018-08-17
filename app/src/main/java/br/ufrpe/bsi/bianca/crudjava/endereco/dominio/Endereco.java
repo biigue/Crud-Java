@@ -5,10 +5,11 @@ import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 import android.arch.persistence.room.Entity;
+import static android.arch.persistence.room.ForeignKey.CASCADE;
 
 import br.ufrpe.bsi.bianca.crudjava.pessoa.dominio.Pessoa;
 
-@Entity(foreignKeys = @ForeignKey(entity = Pessoa.class,
+@Entity(foreignKeys = @ForeignKey(onDelete = CASCADE, entity = Pessoa.class,
         parentColumns = "id",
         childColumns = "hooman_id"),
         indices = {@Index("hooman_id")})
@@ -22,6 +23,14 @@ public class Endereco {
 
     @ColumnInfo(name = "hooman_id")
     public int hoomanId;
+
+    public int getHoomanId() {
+        return hoomanId;
+    }
+
+    public void setHoomanId(int hoomanId) {
+        this.hoomanId = hoomanId;
+    }
 
     public int getId() {
         return id;
